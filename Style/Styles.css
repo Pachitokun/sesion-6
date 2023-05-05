@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+}
+.content{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: #111;
+    color: #fff;
+    overflow: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../images/bg1.jpg);
+    
+}
+
+ul{
+    list-style: none;
+}
+header {
+    position: absolute;
+    top: 1rem;
+    left: 60%;
+}
+.nav {
+    display: flex;
+    gap: 2rem;
+}
+li {
+    font-size: 20px;
+    font-weight: 700;
+
+}
+.description {
+    position: absolute;
+    top: 30%;
+    left: 5rem;
+    width: 100%;
+    height: 60%;
+    color: #fff;
+}
+h1 {
+    font-size: 60px;
+    text-shadow: 0 0 100px  #111;
+}
+h2 {
+    position: absolute;
+    top: -20%;
+    left: 20%;
+    font-size: 70px;
+    width: 93%;
+    padding-top: 1rem;
+    text-shadow: 0 0 100px  #111;
+    text-transform: uppercase;
+    color: green;
+}
+button {
+    position: absolute;
+    
+    display: block;
+    border-radius: 5px;
+}
+button:nth-child(2) {
+    background: linear-gradient(45deg, #00ccff, #0e1538);
+}
+.btn-neon {
+    position: absolute;
+    display: inline-block;
+    padding: 15px 30px;
+    color: #fff;
+    letter-spacing: 2px;
+    font-size: 24px;
+    text-decoration: none;
+    overflow: hidden;
+    transition: .2s;
+    
+    top: 80%;
+    
+
+}
+.btn-neon:hover {
+    background: brown;
+    box-shadow: 0 0 10px brown, 0 0 40px brown, 0 0 80px brown;
+    transition-delay: 1s;
+}
+.btn-neon span {
+    position: absolute;
+    display: block;
+}
+.span1 {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg,transparent,brown);
+}
+.btn-neon:hover .span1 {
+    left: 100%;
+    transition: 1s;
+
+}
+.span2 {
+    top: -100%;
+    right: 0%;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, brown);
+}
+.btn-neon:hover .span2 {
+     right: 100%;
+     transition: 1s;
+     transition-delay: 0.25s;
+}
+.span3 {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, brown);
+}
+.btn-neon:hover .span3 {
+     right: 100%;
+     transition: 1s;
+     transition-delay: 0.5s;
+}
+.color {
+    background: rgba(165, 42, 42, 0.7);
+    padding: 15px 30px;
+    display: inline-block;
+    border: #111;
+}
